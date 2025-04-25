@@ -1,0 +1,127 @@
+:::tracker{species="Cyndaquil" generation=4 baseStats="[[39, 52, 43, 60, 50, 65], [58, 64, 58, 80, 65, 80]]"}
+5:
+  5 ->  0,	0,	0,	0,	0,	0,
+  6 ->  0,	1,	0,	0,	0,	0,
+  7 ->	0,	1,	0,	0,	0,	1,
+  8 ->	0,	2,	0,	0,	0,	2,
+  9 ->	0,	4,	0,	0,	0,	2,
+  10 ->	0,	6,	0,	0,	0,	2,
+  11 ->	0,	9,	0,	0,	0,	2,
+  12 ->	1,	10,	0,	0,	0,	2,
+  13 ->	1,	11,	0,	0,	0,	3,
+  14 ->	1,	11,	0,	0,	0,	5,
+  15 ->	1,	12,	0,	0,	0,	8,
+  16 ->	1,	12,	1,	0,	0,	12,
+  17 ->	1,	13,	2,	1,	0,	12,
+  18 ->	1,	13,	2,	1,	0,	14,
+  19 ->	1,	16,	4,	1,	1,	14,
+  20 ->	1,	16,	8,	1,	1,	14,
+:::
+
+# Pokémon HeartGold/SoulSilver Bug-Catching Contest Manipless
+[Google Docs Version](https://docs.google.com/document/d/1mfwhTEaNJCmoYS428g93CJqEdxeS7FpUSDth7Ai-dUU/edit?tab=t.0)
+
+## Before you start
+
+- Set date to a Tuesday, Thursday or Saturday
+- Set time to 3:55 AM - 3:50 Pokémon
+- (Delete save file with Up+Select+B)
+
+
+## Intro
+- Hold down B and mash A and Next
+- Pick the girl, nickname yourself any one character
+
+
+## New Bark Town
+Options: Fast, Set, OFF, L=A
+
+Pick Cyndaquil
+
+Kill a wild pokemon before Mr. Pokemon’s house (Free Heal there)
+(Low Lv preferred for faster kill. Lv 4 Rattata/Sentret gets Lv 12 on Hoothoot but slow.)
+
+:::::trainer[Rival 1]
+  :::pokemon[Totodile]
+    - Leer x2, Tackle x3
+  :::
+:::::
+
+
+## New Bark Town
+If below 15 HP: Heal using machine at Elm’s lab
+
+
+## Route 29
+
+:::if{source="Cyndaquil" condition="atk=(x / 14+ / 5+)"}
+  Catch a Pokemon if playing safe, otherwise must do Late Rival 2 with Blaze. Falkner can be dicey with Sand-Attack
+  Tackle(s) to weaken + Poké Ball (Sentret is 78% catch at 53% HP)
+:::
+:::if{source="Cyndaquil" condition="atk=~(x / 14+ / 5+)"}
+  Catch a Pokemon
+  Tackle(s) to weaken + Poké Ball (Sentret is 78% catch at 53% HP)
+:::
+
+::variable{name="route29Catch" type="select" title="What did you catch on Route 29?" options='["Pidgey", "Sentret", "N/A"]'}
+
+
+## Route 30
+
+:::::trainer[Youngster Mikey]
+  :::pokemon[Pidgey]
+    - Tackle x2-3
+  :::
+    :::pokemon[Pidgey]
+    - Leer, Tackle x2-3
+  :::
+:::::
+
+(Grab Potion if low on Potions)
+
+![Hidden Potions](route30potions.png)
+
+## Violet City
+
+If racing or no reset, Enter and exit Pokemon Center to set death point to Violet Center
+
+Head to Sprout Tower
+
+:::if{source="Cyndaquil condition="spa=11 && spa=16" level=6}
+
+:::::::trainer[Sage Nico]
+  :::::pokemon[Bellsprout]
+    :::if{source="Cyndaquil condition="atk=(x / x / 25+)"}
+      - Tackle x2-3
+    :::
+    :::if{source="Cyndaquil condition="atk=~(x / x / 25+)"}
+      - Leer, Tackle x2
+    :::
+  :::::
+    :::pokemon[Bellsprout]
+    :::if{source="Cyndaquil condition="atk=(x / 9+ / 0+)"}
+      - Tackle x2 the 2nd and 3rd Bellsprouts
+    :::
+    :::if{source="Cyndaquil condition="atk=(9+ / 8- / x)& && atk=~(x / 9+ / 0+)"}
+      - Tackle x2-3 the 2nd and 3rd Bellsprouts
+    :::
+    :::if{source="Cyndaquil condition="atk=~(9+ / 8- / x)"}
+      - Leer, Tackle x2 the 2nd and 3rd Bellsprouts
+    :::
+  :::::
+:::::::
+
+Tackle every Bellsprout until you get Ember. (Ember* denotes Blaze Ember in these notes)
+
+:::::::trainer[Elder Li]
+  :::::pokemon[Bellsprout]
+      - Ember
+  :::::
+  :::::pokemon[Hoothoot]
+      - Ember x2-4
+      :info[Potion if Hoothoot KOs]{color=blue}
+     ::damage[Peck vs Cyndaquil Lv 11]{source="Cyndaquil" level=11 opponentLevel=10 opponentStat=11 movePower=35 stab=true special=false}
+     ::damage[Peck vs Cyndaquil Lv 12]{source="Cyndaquil" level=12 opponentLevel=10 opponentStat=11 movePower=35 stab=true special=false}
+  :::::
+
+
