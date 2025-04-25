@@ -88,6 +88,8 @@ If racing or no reset, Enter and exit Pokemon Center to set death point to Viole
 Head to Sprout Tower
 
 :::if{source="Cyndaquil condition="spa=11 && spa=16" level=6}
+  - worthy to faint Rattata encounter in Sprout Tower for Lv 12 Hoothoot
+:::
 
 :::::::trainer[Sage Nico]
   :::::pokemon[Bellsprout]
@@ -123,5 +125,6 @@ Tackle every Bellsprout until you get Ember. (Ember* denotes Blaze Ember in thes
      ::damage[Peck vs Cyndaquil Lv 11]{source="Cyndaquil" level=11 opponentLevel=10 opponentStat=11 movePower=35 stab=true special=false}
      ::damage[Peck vs Cyndaquil Lv 12]{source="Cyndaquil" level=12 opponentLevel=10 opponentStat=11 movePower=35 stab=true special=false}
   :::::
+:::::::
 
 
