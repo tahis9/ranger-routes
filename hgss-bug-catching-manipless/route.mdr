@@ -72,7 +72,7 @@ If below 15 HP: Heal using machine at Elm’s lab
   :::pokemon[Pidgey]
     - Tackle x2-3
   :::
-    :::pokemon[Pidgey]
+  :::pokemon[Pidgey]
     - Leer, Tackle x2-3
   :::
 :::::
@@ -100,7 +100,7 @@ Head to Sprout Tower
       - Leer, Tackle x2
     :::
   :::::
-    :::pokemon[Bellsprout]
+  :::::pokemon[Bellsprout]
     :::if{source="Cyndaquil condition="atk=(x / 9+ / 0+)"}
       - Tackle x2 the 2nd and 3rd Bellsprouts
     :::
